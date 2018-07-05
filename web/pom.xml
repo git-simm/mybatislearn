@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>web</artifactId>
+	<name>${project.artifactId} - ${project.version}</name>
+	<packaging>war</packaging>
+	<description>web项目</description>
+
+	<parent>
+		<groupId>simm.learning</groupId>
+		<artifactId>mybatislearn</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>simm.learning</groupId>
+			<artifactId>biz</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- maven编译src与class的JDK版本指定 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<!-- maven打包war
+                1、修改默认war名称（找钢测试环境申请的别名与当前项目名不一致，需要修改）
+                2、关闭web.xml文件检查
+                3、移除tomcat内嵌版本的jar（maven scope=provided也可移除，但是会导致本地运行也被移除从而只能tomcat部署）            -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.2.0</version>
+				<configuration>
+					<warName>simm.learning</warName>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<packagingExcludes>WEB-INF/lib/tomcat-*.jar</packagingExcludes>
+					<outputDirectory>${basedir}/../target</outputDirectory>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
