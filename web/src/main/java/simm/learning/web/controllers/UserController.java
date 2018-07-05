@@ -20,5 +20,18 @@ public class UserController {
         List<User> users = userMapper.selectAll();
         return users;
     }
+<<<<<<< HEAD
+=======
+
+    @RequestMapping("/say/{name}")
+    public String say(@PathVariable String name) {
+        return "你好，" + name;
+    }
+
+    @RequestMapping("/say2/{name}")
+    public String say23(@PathVariable String name) {
+        return "hello ，" + name;
+    }
+>>>>>>> dev
 }
 
