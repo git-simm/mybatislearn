@@ -29,7 +29,7 @@ public class UserController {
     }
 
     @RequestMapping("/say2/{name}")
-    public String say2(@PathVariable String name) {
+    public String say23(@PathVariable String name) {
         return "hello ，" + name;
     }
 }
