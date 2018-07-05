@@ -27,10 +27,5 @@ public class UserController {
     public String say(@PathVariable String name) {
         return "你好，" + name;
     }
-
-    @RequestMapping("/say2/{name}")
-    public String say2(@PathVariable String name) {
-        return "hello ，" + name;
-    }
 }
 
