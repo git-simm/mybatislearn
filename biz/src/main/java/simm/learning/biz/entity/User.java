@@ -5,9 +5,7 @@ public class User {
 
     private String name;
 
-    private String psw;
-
-    private byte[] sex;
+    private String desc;
 
     public Integer getId() {
         return id;
@@ -25,19 +23,11 @@ public class User {
         this.name = name;
     }
 
-    public String getPsw() {
-        return psw;
+    public String getDesc() {
+        return desc;
     }
 
-    public void setPsw(String psw) {
-        this.psw = psw;
-    }
-
-    public byte[] getSex() {
-        return sex;
-    }
-
-    public void setSex(byte[] sex) {
-        this.sex = sex;
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 }

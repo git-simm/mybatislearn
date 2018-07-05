@@ -1,7 +1,6 @@
 package simm.learning.biz.mapper;
-import simm.learning.biz.entity.User;
 
-import java.util.List;
+import simm.learning.biz.entity.User;
 
 public interface UserMapper {
     int deleteByPrimaryKey(Integer id);
@@ -15,5 +14,4 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
-    List<User> selectAll();
 }
