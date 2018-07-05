@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="87e48699-aeb8-4118-bbc3-28b71c866b1e" name="Default" comment="" />
+=======
+    <list default="true" id="87e48699-aeb8-4118-bbc3-28b71c866b1e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
+>>>>>>> parent of 6a0d8fb... dev添加一个新方法
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/biz/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,9 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="352">
               <caret line="16" column="59" lean-forward="true" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
             </state>
@@ -42,6 +50,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
               <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+=======
+            <state relative-caret-position="330">
+              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+>>>>>>> parent of 6a0d8fb... dev添加一个新方法
             </state>
           </provider>
         </entry>
@@ -50,14 +62,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/biz/src/main/java/simm/learning/biz/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/simm/learning/web/controllers/UserController.java" />
-      </list>
-    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -101,51 +105,6 @@
               <item name="mybatislearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="mybatislearn" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mybatislearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatislearn" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatislearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatislearn" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatislearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatislearn" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatislearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatislearn" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatislearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatislearn" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatislearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatislearn" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -156,7 +115,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -223,7 +182,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530792120603</updated>
+<<<<<<< HEAD
       <workItem from="1530792122243" duration="1178000" />
+=======
+      <workItem from="1530792122243" duration="82000" />
+>>>>>>> parent of 6a0d8fb... dev添加一个新方法
     </task>
     <task id="LOCAL-00001" summary="dev添加一个新方法">
       <created>1530794090999</created>
@@ -236,7 +199,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="1184000" />
+=======
+    <option name="totallyTimeSpent" value="82000" />
+>>>>>>> parent of 6a0d8fb... dev添加一个新方法
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -315,6 +282,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="352">
           <caret line="16" column="59" lean-forward="true" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
         </state>
@@ -442,6 +410,10 @@
             <element signature="e#800#801#0" expanded="true" />
             <element signature="e#835#836#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="330">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+>>>>>>> parent of 6a0d8fb... dev添加一个新方法
         </state>
       </provider>
     </entry>
