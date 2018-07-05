@@ -2,7 +2,6 @@ package simm.learning.web.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import simm.learning.biz.entity.User;
@@ -15,17 +14,11 @@ import java.util.List;
 public class UserController {
     @Autowired
     UserMapper userMapper;
-
     @RequestMapping("/list")
     @ResponseBody
-    public List<User> getList() {
+    public List<User> getList(){
         List<User> users = userMapper.selectAll();
         return users;
-    }
-
-    @RequestMapping("/say/{name}")
-    public String say(@PathVariable String name) {
-        return "你好，" + name;
     }
 }
 
