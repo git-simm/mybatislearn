@@ -12,19 +12,19 @@
         </commentGenerator>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/mytest"
-                        userId="root"
-                        password="admin">
+                        connectionURL="jdbc:mysql://10.0.2.187:3306/erp_customer"
+                        userId="ua_erp_customer"
+                        password="G7FXctRTrqab">
         </jdbcConnection>
 
         <javaModelGenerator targetPackage="simm.learning.biz.entity"
                             targetProject="src/main/java"/>
-        <sqlMapGenerator targetPackage="mapper"
+        <sqlMapGenerator targetPackage="mapper/master2"
                          targetProject="src/main/resources"/>
-        <javaClientGenerator targetPackage="simm.learning.biz.mapper"
+        <javaClientGenerator targetPackage="simm.learning.biz.mapper.master2"
                              targetProject="src/main/java" type="XMLMAPPER"/>
 
         <!-- 配置不生成Exmaple文件> -->
-        <table tableName="role" domainObjectName="Role" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="config_api" domainObjectName="ConfigApi" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
     </context>
 </generatorConfiguration>

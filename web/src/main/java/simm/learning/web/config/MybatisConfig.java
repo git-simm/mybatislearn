@@ -12,10 +12,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.sql.DataSource;
 import java.util.Properties;
 
-@Configuration
-@MapperScan("simm.learning.biz.mapper")
-@EnableScheduling
-@EnableTransactionManagement(proxyTargetClass = true)
+//Configuration
+//@MapperScan("simm.learning.biz.mapper")
+//@EnableScheduling
+//@EnableTransactionManagement(proxyTargetClass = true)
 public class MybatisConfig {
     /**
      * github分页插件

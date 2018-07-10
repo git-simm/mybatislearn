@@ -7,6 +7,9 @@ public class User {
 
     private String desc;
 
+    private String psw;
+    private String sex;
+
     public Integer getId() {
         return id;
     }
@@ -29,5 +32,21 @@ public class User {
 
     public void setDesc(String desc) {
         this.desc = desc;
+    }
+
+    public String getPsw() {
+        return psw;
+    }
+
+    public void setPsw(String psw) {
+        this.psw = psw;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 }
