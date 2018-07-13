@@ -15,6 +15,8 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     readSize: 2
+mybatis:
+  type-aliases-package: simm.learning.biz.entity
 
 #spring:
 #  application:
@@ -40,5 +42,5 @@ spring:
 #      poolPreparedStatements: true
 #      maxOpenPreparedStatements: 20
 #mybatis:
-#  type-aliases-package: simm.learning.biz
+#  type-aliases-package: simm.learning.biz.entity
 #  mapper-locations: classpath:mapper/*.xml
