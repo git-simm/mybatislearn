@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="simm.learning.biz.mapper.master2.ConfigApiMapper">
+  <resultMap id="BaseResultMap" type="simm.learning.biz.entity.ConfigApi">
+    <id column="api_id" jdbcType="INTEGER" property="apiId" />
+    <result column="api_name" jdbcType="VARCHAR" property="apiName" />
+    <result column="api_code" jdbcType="VARCHAR" property="apiCode" />
+    <result column="menu_id" jdbcType="INTEGER" property="menuId" />
+    <result column="class_code" jdbcType="VARCHAR" property="classCode" />
+    <result column="class_description" jdbcType="VARCHAR" property="classDescription" />
+    <result column="order" jdbcType="INTEGER" property="order" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="parent_id" jdbcType="INTEGER" property="parentId" />
+    <result column="path" jdbcType="VARCHAR" property="path" />
+    <result column="creator" jdbcType="INTEGER" property="creator" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modifier" jdbcType="INTEGER" property="modifier" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="valid" jdbcType="BIT" property="valid" />
+    <result column="delete_flag" jdbcType="BIT" property="deleteFlag" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    api_id, api_name, api_code, menu_id, class_code, class_description, `order`, description, 
+    parent_id, `path`, creator, create_time, modifier, modify_time, `status`, `valid`, 
+    delete_flag
+  </sql>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from config_api
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from config_api
+    where api_id = #{apiId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from config_api
+    where api_id = #{apiId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="simm.learning.biz.entity.ConfigApi">
+    insert into config_api (api_id, api_name, api_code, 
+      menu_id, class_code, class_description, 
+      `order`, description, parent_id, 
+      `path`, creator, create_time, 
+      modifier, modify_time, `status`, 
+      `valid`, delete_flag)
+    values (#{apiId,jdbcType=INTEGER}, #{apiName,jdbcType=VARCHAR}, #{apiCode,jdbcType=VARCHAR}, 
+      #{menuId,jdbcType=INTEGER}, #{classCode,jdbcType=VARCHAR}, #{classDescription,jdbcType=VARCHAR}, 
+      #{order,jdbcType=INTEGER}, #{description,jdbcType=VARCHAR}, #{parentId,jdbcType=INTEGER}, 
+      #{path,jdbcType=VARCHAR}, #{creator,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{modifier,jdbcType=INTEGER}, #{modifyTime,jdbcType=TIMESTAMP}, #{status,jdbcType=INTEGER}, 
+      #{valid,jdbcType=BIT}, #{deleteFlag,jdbcType=BIT})
+  </insert>
+  <insert id="insertSelective" parameterType="simm.learning.biz.entity.ConfigApi">
+    insert into config_api
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="apiId != null">
+        api_id,
+      </if>
+      <if test="apiName != null">
+        api_name,
+      </if>
+      <if test="apiCode != null">
+        api_code,
+      </if>
+      <if test="menuId != null">
+        menu_id,
+      </if>
+      <if test="classCode != null">
+        class_code,
+      </if>
+      <if test="classDescription != null">
+        class_description,
+      </if>
+      <if test="order != null">
+        `order`,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="parentId != null">
+        parent_id,
+      </if>
+      <if test="path != null">
+        `path`,
+      </if>
+      <if test="creator != null">
+        creator,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="modifier != null">
+        modifier,
+      </if>
+      <if test="modifyTime != null">
+        modify_time,
+      </if>
+      <if test="status != null">
+        `status`,
+      </if>
+      <if test="valid != null">
+        `valid`,
+      </if>
+      <if test="deleteFlag != null">
+        delete_flag,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="apiId != null">
+        #{apiId,jdbcType=INTEGER},
+      </if>
+      <if test="apiName != null">
+        #{apiName,jdbcType=VARCHAR},
+      </if>
+      <if test="apiCode != null">
+        #{apiCode,jdbcType=VARCHAR},
+      </if>
+      <if test="menuId != null">
+        #{menuId,jdbcType=INTEGER},
+      </if>
+      <if test="classCode != null">
+        #{classCode,jdbcType=VARCHAR},
+      </if>
+      <if test="classDescription != null">
+        #{classDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="order != null">
+        #{order,jdbcType=INTEGER},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="parentId != null">
+        #{parentId,jdbcType=INTEGER},
+      </if>
+      <if test="path != null">
+        #{path,jdbcType=VARCHAR},
+      </if>
+      <if test="creator != null">
+        #{creator,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifier != null">
+        #{modifier,jdbcType=INTEGER},
+      </if>
+      <if test="modifyTime != null">
+        #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="valid != null">
+        #{valid,jdbcType=BIT},
+      </if>
+      <if test="deleteFlag != null">
+        #{deleteFlag,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="simm.learning.biz.entity.ConfigApi">
+    update config_api
+    <set>
+      <if test="apiName != null">
+        api_name = #{apiName,jdbcType=VARCHAR},
+      </if>
+      <if test="apiCode != null">
+        api_code = #{apiCode,jdbcType=VARCHAR},
+      </if>
+      <if test="menuId != null">
+        menu_id = #{menuId,jdbcType=INTEGER},
+      </if>
+      <if test="classCode != null">
+        class_code = #{classCode,jdbcType=VARCHAR},
+      </if>
+      <if test="classDescription != null">
+        class_description = #{classDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="order != null">
+        `order` = #{order,jdbcType=INTEGER},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="parentId != null">
+        parent_id = #{parentId,jdbcType=INTEGER},
+      </if>
+      <if test="path != null">
+        `path` = #{path,jdbcType=VARCHAR},
+      </if>
+      <if test="creator != null">
+        creator = #{creator,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifier != null">
+        modifier = #{modifier,jdbcType=INTEGER},
+      </if>
+      <if test="modifyTime != null">
+        modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null">
+        `status` = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="valid != null">
+        `valid` = #{valid,jdbcType=BIT},
+      </if>
+      <if test="deleteFlag != null">
+        delete_flag = #{deleteFlag,jdbcType=BIT},
+      </if>
+    </set>
+    where api_id = #{apiId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="simm.learning.biz.entity.ConfigApi">
+    update config_api
+    set api_name = #{apiName,jdbcType=VARCHAR},
+      api_code = #{apiCode,jdbcType=VARCHAR},
+      menu_id = #{menuId,jdbcType=INTEGER},
+      class_code = #{classCode,jdbcType=VARCHAR},
+      class_description = #{classDescription,jdbcType=VARCHAR},
+      `order` = #{order,jdbcType=INTEGER},
+      description = #{description,jdbcType=VARCHAR},
+      parent_id = #{parentId,jdbcType=INTEGER},
+      `path` = #{path,jdbcType=VARCHAR},
+      creator = #{creator,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      modifier = #{modifier,jdbcType=INTEGER},
+      modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      `status` = #{status,jdbcType=INTEGER},
+      `valid` = #{valid,jdbcType=BIT},
+      delete_flag = #{deleteFlag,jdbcType=BIT}
+    where api_id = #{apiId,jdbcType=INTEGER}
+  </update>
+</mapper>
