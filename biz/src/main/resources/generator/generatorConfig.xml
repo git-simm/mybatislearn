@@ -12,19 +12,30 @@
         </commentGenerator>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/mytest"
+                        connectionURL="jdbc:mysql://localhost:3306/erp_authority"
                         userId="root"
                         password="admin">
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="simm.learning.biz.entity"
+        <javaModelGenerator targetPackage="simm.learning.biz.entity.authority"
                             targetProject="src/main/java"/>
-        <sqlMapGenerator targetPackage="mapper/master1"
+        <sqlMapGenerator targetPackage="mapper/authority"
                          targetProject="src/main/resources"/>
-        <javaClientGenerator targetPackage="simm.learning.biz.mapper.master1"
+        <javaClientGenerator targetPackage="simm.learning.biz.mapper.authority"
                              targetProject="src/main/java" type="XMLMAPPER"/>
 
         <!-- 配置不生成Exmaple文件> -->
-        <table tableName="role" domainObjectName="Role" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="config_user" domainObjectName="User" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="config_user_api" domainObjectName="UserApi" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="config_user_role" domainObjectName="UserRole" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="config_role" domainObjectName="Role" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="config_role_api" domainObjectName="RoleApi" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="config_role_department" domainObjectName="RoleDepartment" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="config_role_department_company" domainObjectName="RoleDepartmentCompany" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="config_role_whs" domainObjectName="RoleWhs" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="config_role_work_shop" domainObjectName="RoleWorkShop" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="config_organization_business_institution" domainObjectName="OrgInst" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="config_organization_department" domainObjectName="Department" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="config_organization_employee" domainObjectName="Employee" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
     </context>
 </generatorConfiguration>

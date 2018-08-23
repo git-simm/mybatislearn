@@ -23,8 +23,8 @@ import static simm.learning.web.config.Master2DataSourceConfig.getDataSource;
 @MapperScan(basePackages = Master1DataSourceConfig.PACKAGE, sqlSessionFactoryRef = "master1SqlSessionFactory")
 public class Master1DataSourceConfig {
     // 精确到 master 目录，以便跟其他数据源隔离
-    static final String PACKAGE = "simm.learning.biz.mapper.master1";
-    static final String MAPPER_LOCATION = "classpath:mapper/master1/*.xml";
+    static final String PACKAGE = "simm.learning.biz.mapper.authority";
+    static final String MAPPER_LOCATION = "classpath:mapper/authority/*.xml";
 
     @Value("${spring.write.one.url}")
     private String url;

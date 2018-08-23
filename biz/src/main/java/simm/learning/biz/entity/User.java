@@ -1,7 +1,13 @@
 package simm.learning.biz.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class User {
     private Integer id;
+
+    private String userId;
+
+    private String systemId;
 
     private String name;
 
@@ -48,5 +54,21 @@ public class User {
 
     public void setSex(String sex) {
         this.sex = sex;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getSystemId() {
+        return systemId;
+    }
+
+    public void setSystemId(String systemId) {
+        this.systemId = systemId;
     }
 }
