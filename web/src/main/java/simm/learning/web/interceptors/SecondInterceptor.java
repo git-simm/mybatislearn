@@ -7,6 +7,9 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * 对 dispatcherServlet 请求的第二个拦截器
+ */
 @Component
 public class SecondInterceptor implements HandlerInterceptor {
     @Override

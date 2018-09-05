@@ -5,12 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
+import simm.learning.web.config.FreeMarkerConfig;
 import simm.learning.web.config.Master1DataSourceConfig;
 import simm.learning.web.config.Master2DataSourceConfig;
 
 @SpringBootApplication(scanBasePackages = "simm.learning")
 @PropertySource("classpath:config/db.properties")
-@Import({Master1DataSourceConfig.class,Master2DataSourceConfig.class})
+@Import({Master1DataSourceConfig.class,Master2DataSourceConfig.class,FreeMarkerConfig.class})
 @EnableAspectJAutoProxy
 public class WebApplication {
 	public static void main(String[] args) {

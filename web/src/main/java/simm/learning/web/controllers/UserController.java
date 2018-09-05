@@ -10,6 +10,7 @@ import simm.learning.biz.entity.RequestJson;
 import simm.learning.biz.entity.authority.User;
 
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/user")
@@ -26,6 +27,19 @@ public class UserController {
         return users;
     }
 
+    @RequestMapping("/list2")
+    @ResponseBody
+    public List<User> getList2(){
+        List<User> users = userBiz.selectAll();
+        boolean bwe = true;
+        return users;
+    }
+
+    @RequestMapping("/index")
+    public String index(Map<String,Object> map){
+        map.put("name","大王");
+        return "index";
+    }
     /*
     @RequestMapping("/configlist")
     @ResponseBody

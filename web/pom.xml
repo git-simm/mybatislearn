@@ -21,7 +21,11 @@
 	</properties>
 
 	<dependencies>
-
+		<!-- 引入freeMarker的依赖包. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>simm.learning</groupId>
 			<artifactId>biz</artifactId>
@@ -44,6 +48,8 @@
 				<configuration>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
+					<!-- 如果没有该项配置，devtools不会起作用，即应用不会restart -->
+					<fork>true</fork>
 				</configuration>
 			</plugin>
 			<!-- maven打包war

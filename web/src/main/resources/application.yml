@@ -15,6 +15,30 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     readSize: 2
+  devtools:
+    restart:
+      enabled: true
+  mvc:
+    servlet:
+      load-on-startup: 0
+  http:
+    encoding:
+      force: true
+  freemarker:
+      allow-request-override: false
+      cache: true
+      check-template-location: true
+      charset: utf-8
+      content-type: text/html
+      expose-request-attributes: false
+      expose-session-attributes: false
+      suffix: .ftl
+      templateLoaderPath: classpath:/templates/
+      expose-spring-macro-helpers: false
+      #应用程序发布，如果有上下文路径，则可以使用
+      request-context-attribute: request
+  jackson:
+    default-property-inclusion:
 mybatis:
   type-aliases-package: simm.learning.biz.entity
 
@@ -43,4 +67,4 @@ mybatis:
 #      maxOpenPreparedStatements: 20
 #mybatis:
 #  type-aliases-package: simm.learning.biz.entity
-#  mapper-locations: classpath:mapper/*.xml
+#  mapper-locations: classpath:mapper/*.xml:
