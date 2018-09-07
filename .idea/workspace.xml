@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef982fc1-3c49-4d7c-a36f-58da26c2185c" name="Default" comment="提交unicode编码转换成中文的操作">
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/simm/learning/web/config/SwaggerConfig.java" afterDir="false" />
+    <list default="true" id="ef982fc1-3c49-4d7c-a36f-58da26c2185c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/demo.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/demo.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/simm/learning/web/controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/simm/learning/web/controllers/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/simm/learning/web/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/simm/learning/web/controllers/UserController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/biz/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,8 +37,8 @@
       <file leaf-file-name="FileController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/simm/learning/web/controllers/FileController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="713">
+              <caret line="31" column="50" lean-forward="true" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -604,7 +599,7 @@
       <workItem from="1535952759258" duration="14221000" />
       <workItem from="1536038690182" duration="1231000" />
       <workItem from="1536121820531" duration="1839000" />
-      <workItem from="1536298152122" duration="2826000" />
+      <workItem from="1536298152122" duration="3539000" />
     </task>
     <task id="LOCAL-00001" summary="添加我的内容">
       <created>1531445576830</created>
@@ -634,14 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536122910997</updated>
     </task>
-    <task id="LOCAL-00005" summary="添加mybatis多数据源功能">
-      <created>1531445148465</created>
+    <task id="LOCAL-00005" summary="添加swagger组件，对接口进行描述">
+      <created>1536301368804</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1531445148465</updated>
+      <updated>1536301368809</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -677,7 +672,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108397000" />
+    <option name="totallyTimeSpent" value="109110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1448" y="-8" width="1456" height="916" extended-state="6" />
@@ -761,7 +756,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加我的内容" />
     <MESSAGE value="提交unicode编码转换成中文的操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交unicode编码转换成中文的操作" />
+    <MESSAGE value="添加swagger组件，对接口进行描述" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加swagger组件，对接口进行描述" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1216,8 +1212,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/simm/learning/web/controllers/FileController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="713">
+          <caret line="31" column="50" lean-forward="true" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
